@@ -1,0 +1,132 @@
+
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+    --rich-dark-green: rgb(33,108,12);
+    --pale-dark-violet: rgb(94,70,133);
+   --rich-midtone-yellow: rgb(211,228,67);
+   --bright-dark-green: rgb(28,178,43);
+   --rich-midtone-cyan: rgb(70,217,251);
+   --gin: #e0eae4;
+}
+
+/*set 1rem to 10px */
+html {
+    font-size: 62.5%
+}
+
+/*sans serif font stack used */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--rich-dark-green);
+    background-color: var(--gin);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ margin-bottom: 0.5rem;
+ color: var(--rich-midtone-cyan);
+ font-weight: 600;
+ line-height: 0.9;   
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.75rem;
+}
+
+h5 {
+    font-size: 2.5rem;
+}
+
+h6{
+    font-size: 2rem;
+}
+
+p {
+margin-bottom: 1rem;
+}
+
+header {
+    width: 98%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1.titlestyle {
+    padding: 1rem 1.25rem;
+    font-size: 3.75rem;
+}
+
+main {
+    width: 98%;
+    margin: 1.5rem auto;
+    background-color: var(--gin);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+footer {
+    margin: 1.25rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: var(--bright-dark-green);
+    justify-content: flex-end;
+
+}
+
+nav a {
+    color: var(--rich-midtone-yellow) ;
+    padding: 1.4rem 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+aside {
+    flex: 1;
+    background-color: var(--pale-dark-violet);
+    padding: 8rem;
+    text-align: left;
+    width: 30rem;
+}
+
+.picborder {
+    flex: 4;
+    background-color: var(--gin);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.picture {
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 25px;
+    padding: 1rem;
+    flex: 0 0 3rem;
+    box-shadow: 1rem 1rem 0.5rem grey;
+    margin: 2rem;
+}
