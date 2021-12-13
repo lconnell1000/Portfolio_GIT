@@ -81,8 +81,6 @@ main {
     margin: 1.5rem auto;
     background-color: var(--gin);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -108,9 +106,9 @@ nav a {
 aside {
     flex: 1;
     background-color: var(--pale-dark-violet);
-    padding: 8rem;
+    padding: 1rem;
     text-align: left;
-    width: 30rem;
+    width: 30rem; 
 }
 
 .picborder {
@@ -129,4 +127,15 @@ aside {
     flex: 0 0 3rem;
     box-shadow: 1rem 1rem 0.5rem grey;
     margin: 2rem;
+}
+
+.aboutme {
+    display: flex;
+    flex: 1;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 25px;
+    padding: 1rem;
+    justify-content: center;
+   
 }
