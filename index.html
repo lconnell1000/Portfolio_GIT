@@ -9,47 +9,61 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <h1 class="titlestyle">
-            Welcome To Lachlan Connell's Portfolio
-        </h1>
-        <p>
-            Below you will find a collection of Lachlan's work along with ways to connect with him!
-        </p>
+<body class="container">
+<header>  <h1 class="titlestyle">
+    Welcome To Lachlan Connell's Portfolio
+</h1>
+<p>
+    Below you will find a collection of Lachlan's work along with ways to connect with him!
+</p>
+          <!-- Navbar -->
+          <nav>
+              
+                  <a href="#about-me">About me</a> 
+                   <a href="#my-work">My Work</a>
+                   <a href="#contact-me">Contact me</a> 
+                
+        </nav>
     </header>
-
-<!-- Navbar -->
-<nav>
-    <a href="#">About me</a>
-    <a href="#">My Work</a>
-    <a href="#">Contact me</a>
-</nav>
-
-
-<main>
-    <!--Sidebar-->
-<aside>
-    <h2>About Me</h2>
-    <h2>My Work</h2>
-    <h2>Contact me</h2>
-</aside>
-    <!-- Picture of me -->
+<div class="content">
+    <main>
+        <!-- Picture of me -->
 <div class="picborder">
     <section class="picture">
         <header>Lachlan</header>
         <img src="./assets/images/me.png" alt="A picture of Lachlan" />
     </section>
-
 </div>
-
 <!--About me section-->
-<div class="aboutme">
+<div id="about-me" class="aboutme">
     <p>Hi! My name is Lachlan and I am from Adelaide in South Australia. I enrolled in the University of 
-        Adelaide's coding bootcamp and started my web development journey on the 29th of November 2021.
+        Adelaide's coding bootcamp and started my course on the 29th of November 2021. <br>
+        Since starting the bootcamp it has been a very challenging learning journey but also very exciting and 
+        rewarding.<br> When i'm not spending time working on my coding skills I spend most my time either watching
+        sports, or cycling.
     <br>
     </p>
 </div>
-</main>
+<!--my work section-->
+<div class="1stpic" id="my-work">
+<a href=" https://lconnell1000.github.io/homework_GIT/">
+    <img src="./assets/images/week1.png" alt="week 1 homework screenshot">
+</a>
+</div>
+    </main>
+    <aside class="leftsidebar">
+        <h2>About Me</h2>
+        <h2>My Work</h2>
+        <h2>Contact me</h2>
+    </aside>
+</div>
+<footer id="contact-me">
+<h3>Where to find me:
+<a href="lconnell1000@gmail.com">Send email</a>
+<a href="https://www.linkedin.com/in/lachlan-connell-87280392/" target="_blank">Visit My LinkedIn</a>
+<a href="https://github.com/lconnell1000" target="_blank">Visit My Github</a>
+</h3>
+
+</ul>
+</footer>
 </body>
