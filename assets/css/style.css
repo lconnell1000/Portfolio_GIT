@@ -93,15 +93,30 @@ aside {
 
 }
 footer {
-    background: var(--gin);
     width: 100%;
-    padding: 5px;
-    margin: 15px auto;
-    border-style: solid;
-    display: flex;
-    justify-content: space-between;
-}
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--pale-dark-violet);
+    color: var(--gin);
+    margin-top: auto;
+  }
 
+  footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 500px;
+  }
+  
+  footer a {
+    color: var(--bright-dark-green);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  footer a:hover {
+    color: var(--rich-dark-green)
+  }
 .firstpic img:hover {
     opacity: .5;
 }
