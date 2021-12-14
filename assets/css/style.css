@@ -83,15 +83,15 @@ main {
     width: 100%;
     margin: 15px auto;
 }
+
 aside {
     background-color: var(--gin);
     padding: 10;
-    text-align: left;
-    width: 200px; 
+    text-align: center; 
     border: var(--pale-dark-violet);
     border-style: dashed; 
-
 }
+
 footer {
     width: 100%;
     bottom: 0;
@@ -122,19 +122,24 @@ footer {
 }
 
 .otherpics {
-    flex: 4;
-    padding: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+
 }
 
 .otherpics img:hover {
     opacity: .5;
 }
 
+.more-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.hidden {
+    display:inline;
+}
 /*setting mobile layout as our default display*/
 .container,
 .content {
@@ -142,7 +147,7 @@ footer {
     flex-direction: column;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) and (max-width: 1440px) {
     .content {
         flex-direction: row;
         flex-wrap: wrap;
@@ -152,15 +157,18 @@ footer {
         order: 2;
         min-height: 80vh;
     }
-    .left-sidebar {
+    .leftsidebar {
         order: 1;
         flex: 1;
+        display: flex;
     }
-    
+    .hidden {
+        display: none;
+    }
 }
 
 @media all and (max-width: 768px) {
-    aside {
-        display:none;
+    .leftsidebar {
+        display: none;
     }
 }
