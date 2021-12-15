@@ -32,6 +32,21 @@ h6 {
  line-height: 0.9;   
 }
 
+.leftside {
+    background-color: var(--gin);
+    float:left;
+    width: 30%;
+    padding: 10px;
+    /*height: 750px;*/
+}
+
+.rightside {
+    background-color: var(--gin);
+    border-left: 10px var(--pale-dark-violet) dashed;
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
 header {
     width: 100%;
     text-align: center;
@@ -86,7 +101,7 @@ main {
 
 aside {
     background-color: var(--gin);
-    padding: 10;
+    padding: 10px;
     text-align: center; 
     border: var(--pale-dark-violet);
     border-style: dashed; 
@@ -100,6 +115,7 @@ footer {
     background: var(--pale-dark-violet);
     color: var(--gin);
     margin-top: auto;
+    flex: 2;
   }
 
   footer ul {
@@ -137,17 +153,21 @@ footer {
     justify-content: space-evenly;
 }
 
+
+
 .hidden {
     display:inline;
 }
 /*setting mobile layout as our default display*/
+
 .container,
 .content {
     display: flex;
     flex-direction: column;
 }
 
-@media all and (min-width: 769px) and (max-width: 1440px) {
+
+@media screen and (max-width: 1440px) {
     .content {
         flex-direction: row;
         flex-wrap: wrap;
@@ -157,18 +177,7 @@ footer {
         order: 2;
         min-height: 80vh;
     }
-    .leftsidebar {
-        order: 1;
-        flex: 1;
-        display: flex;
-    }
-    .hidden {
-        display: none;
-    }
+ 
 }
 
-@media all and (max-width: 768px) {
-    .leftsidebar {
-        display: none;
-    }
-}
+
