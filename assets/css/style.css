@@ -154,10 +154,6 @@ footer {
 }
 
 
-
-.hidden {
-    display:inline;
-}
 /*setting mobile layout as our default display*/
 
 .container,
@@ -167,17 +163,24 @@ footer {
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
     .content {
         flex-direction: row;
         flex-wrap: wrap;
     }
     main {
         flex: 2;
-        order: 2;
         min-height: 80vh;
     }
- 
+    .rightside {
+        width: 100%;
+        background-color: var(--gin);
+        border: none;
+    }
+    .leftside {
+        display:none;
+        /*height: 750px;*/
+    }
 }
 
 
