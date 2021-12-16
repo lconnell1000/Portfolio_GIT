@@ -135,7 +135,7 @@ footer a:hover {
 /*media query for smaller devices to get rid of the sidebar that was created for on larger devices */
 
    @media screen and (max-width: 768px) {
-       .lefside, .rightside, body {
+       .leftside, .rightside, body {
            width: 100%;}
         .rightside {
             border-left: none;}
