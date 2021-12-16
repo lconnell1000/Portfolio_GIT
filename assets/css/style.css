@@ -8,6 +8,7 @@
    --gin: #e0eae4;
 }
 
+/*body styling for the page */
 body {
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@ body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+/*header styling */
 header {
     background-color: var(--bright-dark-green);
     color: var(--rich-midtone-cyan);
@@ -29,12 +31,13 @@ header {
     justify-content: space-between;
     text-align: center;
 }
-
+/*navigat bar styling */
 nav {
     display: flex;
     background-color: var(--bright-dark-green);
-    justify-content: flex-end;
-
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
 }
 
 nav a {
@@ -43,6 +46,10 @@ nav a {
     text-decoration: none;
     text-align: center;
 }
+nav a:hover {
+    color: var(--pale-dark-violet);
+}
+/*picture of me styling */
 .picborder {
     background-color: var(--gin);
     padding: 10px;
@@ -62,6 +69,7 @@ nav a {
     width: 100%;
     border-radius: 0px, 0px, 50px, 50px;
 }
+/*stling to align our contents on the page on the left or right */
 .leftside {
     background-color: var(--gin);
     float:left;
@@ -76,6 +84,8 @@ nav a {
     width: 80%;
     padding: 10px;
 }
+
+/*picture of my work with links to it */
 .firstpic img:hover {
     opacity: .5;
 }
@@ -87,7 +97,6 @@ nav a {
 .otherpics {
     display: flex;
     flex-direction: column;
-
 }
 
 .otherpics img:hover {
@@ -100,6 +109,7 @@ nav a {
     justify-content: space-evenly;
 }
 
+/*footer styling */
 footer {
     background: var(--gin);
     width: 100%;
@@ -112,7 +122,6 @@ footer {
 footer ul {
     display: flex;
     justify-content: space-evenly;
-    min-width: 400px;
 }
 
 footer a {
@@ -123,6 +132,7 @@ footer a:hover {
     color: var(--rich-dark-green);
 }
 
+/*media query for smaller devices to get rid of the sidebar that was created for on larger devices */
 
    @media screen and (max-width: 768px) {
        .lefside, .rightside, body {
@@ -130,7 +140,13 @@ footer a:hover {
         .rightside {
             border-left: none;}
         }
-
+        .otherpics img {
+            width: 100%
+        }
+        .leftside h2 {
+            display: flex;
+            justify-content: space-around;
+        }
 
       
        
