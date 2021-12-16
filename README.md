@@ -34,7 +34,7 @@ The following image shows the web application's appearance
 ![About me section](screenshot7.png)
 
 
-> **Note**: This shows the appearance of the wabpage on a smaller device such as a tablet. As you can see the side bar is gone and the smaller images of work have arranged on top of eachother on top of the larger image
+> **Note**: This shows the appearance of the wabpage on a smaller device such as a tablet. As you can see the side bar is gone and the smaller images of work have arranged on top of eachother on top of the larger image and also the headings that were in the sidebar have been centered.
 
 ![No side bar](screenshot8.png)
 
