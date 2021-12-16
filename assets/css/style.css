@@ -28,7 +28,6 @@ header {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    width: 100%;
 }
 
 nav {
@@ -66,7 +65,7 @@ nav a {
 .leftside {
     background-color: var(--gin);
     float:left;
-    width: 30%;
+    width: 20%;
     padding: 10px;
 }
 
@@ -74,14 +73,16 @@ nav a {
     background-color: var(--gin);
     border-left: 10px var(--pale-dark-violet) dashed;
     float: left;
-    width: 70%;
+    width: 80%;
     padding: 10px;
 }
 .firstpic img:hover {
     opacity: .5;
 }
  
-
+.firstpic img {
+    width:100%;
+}
 
 .otherpics {
     display: flex;
@@ -102,7 +103,7 @@ nav a {
 footer {
     background: var(--gin);
     width: 100%;
-    padding: 50px;
+    padding: 0.5%;
     margin: 15px auto;
     border-style: solid;
     text-align: center;
@@ -123,13 +124,14 @@ footer a:hover {
 }
 
 
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: 768px) {
        .lefside, .rightside, body {
-           width: 100%;
-       }
+           width: 100%;}
+        .rightside {
+            border-left: none;}
+        }
 
-       .rightside {
-           border-left: none;
-       }
-     
+
+      
+       
     
