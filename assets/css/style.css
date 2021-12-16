@@ -68,7 +68,6 @@ nav a {
     float:left;
     width: 30%;
     padding: 10px;
-    /*height: 750px;*/
 }
 
 .rightside {
@@ -81,6 +80,8 @@ nav a {
 .firstpic img:hover {
     opacity: .5;
 }
+ 
+
 
 .otherpics {
     display: flex;
@@ -98,6 +99,28 @@ nav a {
     justify-content: space-evenly;
 }
 
+footer {
+    background: var(--gin);
+    width: 100%;
+    padding: 50px;
+    margin: 15px auto;
+    border-style: solid;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 400px;
+}
+
+footer a {
+    color: var(--bright-dark-green);
+}
+ 
+footer a:hover {
+    color: var(--rich-dark-green);
+}
 
 
    @media screen and (max-width: 767px) {
@@ -105,103 +128,8 @@ nav a {
            width: 100%;
        }
 
-    .aboutme {
-        border-style: solid;
-        border-width: 5px;
-        border-radius: 25px;
-        padding: 10px;
-        font-size: 15px;
-        margin: 20px;
+       .rightside {
+           border-left: none;
        }
+     
     
-   
-   /*
-main {
-    background: var(--gin);
-    max-width: 1270px;
-    margin: 15px auto;
-}
-aside {
-    background-color: var(--gin);
-    padding: 10;
-    text-align: left;
-    max-width: 200px; 
-    border: var(--pale-dark-violet);
-    border-style: dashed; 
-
-}
-footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    background: var(--pale-dark-violet);
-    color: var(--gin);
-    margin-top: auto;
-    flex: 2;
-  }
-
-  footer ul {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 500px;
-  }
-  
-  footer a {
-    color: var(--bright-dark-green);
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  footer a:hover {
-    color: var(--rich-dark-green)
-  }
-.firstpic img:hover {
-    opacity: .5;
-}
-
-.otherpics {
-    display: flex;
-    flex-direction: column;
-}
-
-.more-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-
-.otherpics img:hover {
-    opacity: .5;
-}
-
-
-/*setting mobile layout as our default display*/
-.container,
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
-@media all and (min-width: 769px) {
-    .content {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    main {
-        flex: 2;
-        order: 2;
-        min-height: 80vh;
-    }
-    .left-sidebar {
-        order: 1;
-        flex: 1;
-    }
-    
-}
-
-@media all and (max-width: 768px) {
-    aside {
-        display:none;
-    }
