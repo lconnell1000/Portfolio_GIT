@@ -10,7 +10,7 @@ The following image shows the web application's appearance
 
 > **Note**: This shows the landing page .
 
-![Landing page](./assets/images/langingpage.png)
+![Landing page](./assets/images/landingpage.png)
 
 > **Note**: This shows the my work section.
 
