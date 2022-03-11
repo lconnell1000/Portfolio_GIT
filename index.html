@@ -2,115 +2,235 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lachlan's Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>
+   Lachlan Connell | A Web Developer based in Adelaide, Australia.
+  </title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-<header><h1>
-    Welcome To Lachlan Connell's Portfolio
-</h1>
-          <!-- Navbar -->
-          <nav>
-              <ul>
-                  <li><a href="#about-me">About me</a> </li>
-                  <li><a href="#my-work">My Work</a></li>
-                  <li><a href="#contact-me">Contact me</a> </li>
-                </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Picture of me -->
-        <div class="leftside">
-            <h2>Picture of Me</h2>
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Lachlan Connell</span>
+        </h1>
+        <p>Full Stack Web Developer based in Adelaide, Australia.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Cocktail Bar Stocktake Program</h3>
+              <p>
+                Our first group project of the course using all the front end technology we had learnt so far
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bulma</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://lconnell1000.github.io/Project-1/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/lconnell1000/Project-1" title="View Source Code" target="_blank">
+                  <img src="./assets/images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./assets/images/cocktail.png" class="work__image" alt="Cocktail image" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Weather Dashboard</h3>
+              <p>
+                A weather dashboard application designed for a traveler wanting to plan their trip according to the weather in multiple cities.
+              </p>
+              <ul class="work__list">
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+                <li>Moment Js</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://lconnell1000.github.io/Weather-Dashboard/" target='_blank' class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/lconnell1000/Weather-Dashboard"title="View Source Code" target="_blank">
+                  <img src="./assets/images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./assets/images/weather.png" class="work__image" alt="weather image" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Team Profile Generator</h3>
+              <p>
+                A node Js command line application to take in information about employees on a software engineering team and generate a html webpage with this information.
+              </p>
+              <ul class="work__list">
+                <li>Node Js</li>
+                <li>Javascript</li>
+                <li>Inquirer</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://drive.google.com/file/d/19Dylqekloj3YLcPEVy72itDfpZRG1U2s/view" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/lconnell1000/TeamProfileGenerator" title="View Source Code" target="_blank">
+                  <img src="./assets/images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./assets/images/teamprofile.png" class="work__image" alt="team profile image" />
+            </div>
+          </div>
+
+        
+        <div class="work__box">
+            <div class="work__text">
+              <h3>Employee Tracker</h3>
+              <p>
+                A CMS used to track employees at a company.
+              </p>
+              <ul class="work__list">
+                <li>Node Js</li>
+                <li>Mysql2</li>
+                <li>Console table</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://drive.google.com/file/d/1e7ovNjn6b6-LZjic3Q9NeacXETktLDQP/view" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/lconnell1000/Employee-Tracker-Assignment" title="View Source Code" target="_blank">
+                  <img src="./assets/images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./assets/images/employeetracker.png" class="work__image" alt="employee tracker image" />
+            </div>
+          </div>
         </div>
-        <div class="rightside">
-<div class="picborder">
-    <section class="picture">
-        <header>Lachlan</header>
-        <img src="./assets/images/me.png" alt="A picture of Lachlan" />
+      </div>
+    </div>
+      </div>
     </section>
-</div>
-</div>
 
-    <!--About Me-->
-    <div class="leftside">
-        <h2 id="about-me">About Me</h2>
-    </div>
-    <div class="rightside">
-        <p>Hi! My name is Lachlan and I am from Adelaide in South Australia. I enrolled in the University of 
-            Adelaide's coding bootcamp and started my course on the 29th of November 2021. <br>
-            Since starting the bootcamp it has been a very challenging learning journey but also very exciting and 
-            rewarding.<br> When i'm not spending time working on my coding skills I spend most my time either watching
-            sports, or cycling.
-        <br>
+  
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Info about me paragraph -->
+            <p>
+                Hi! My name is Lachlan and I am from Adelaide in South Australia. I enrolled in the University of 
+                Adelaide's coding bootcamp and started my course on the 29th of November 2021. <br>
+                Since starting the bootcamp it has been a very challenging learning journey but also very exciting and 
+                rewarding.<br> When i'm not spending time working on my coding skills I spend most my time either watching
+                sports, or cycling
+            </p>
+            <!-- Link to my resume -->
+            <a href="Lachlan.ConnellResume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" src="./assets/images/me.png" alt="photo of me" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast learner looking to get his teeth sunk in to
+          the world of web development? say "Hi 👋" I will aim to respond back to
+          all enquiries within 48 hrs. 😊 The quickest way to contact me is via email.
         </p>
+        <a href="mailto:lconnell1000@gmail.com" class="btn">lconnell1000@gmail.com</a>
+      </div>
     </div>
+  </section>
 
-    <!--My Work-->
-    <div class="leftside">
-        <h2 id="my-work">My Work</h2>
-    </div>
-    <div class="rightside">
-        <article class="firstpic">
-            <h3>Week 1 Homework Assignment</h3>
-            <a href=" https://lconnell1000.github.io/homework_GIT/">
-                <img src="./assets/images/week1.png" alt="week 1 homework screenshot">
-            </a>
-        </article>
-    </div>
-    <div class="leftside">
-        <h2>Ongoing projects</h2>
-    </div>
-    <div class="rightside">
-        <div class="more-projects">
-            <div class="otherpics">
-                <h3>Project 1 https://github.com/lconnell1000/Project-1</h3>
-                <a href="https://lconnell1000.github.io/Project-1/">
-                    <img src="./assets/images/cocktail.png" alt="Project-1">
-                </a>
-            </div>
-            <div class="otherpics">
-                <h3>Coding Quiz https://github.com/lconnell1000/codingQuiz</h3>
-                <a href=" https://lconnell1000.github.io/codingQuiz/">
-                    <img src="./assets/images/quiz.png" alt="coding quiz">
-                </a>
-            </div>
-            </div>
-            <div class= "more-projects">
-            <div class="otherpics">
-                <h3>Weather Dashboard https://github.com/lconnell1000/Weather-Dashboard</h3>
-                <a href=" https://lconnell1000.github.io/Weather-Dashboard/">
-                    <img src="./assets/images/weather.png" alt="Weather dashboard">
-                </a>
-            </div>
-            <div class="otherpics">
-                <h3>Tic Tac Toe Game</h3>
-                <a href="https://playtictactoe.org">
-                    <img src="./assets/images/tictactoe.png" alt="Tic Tac Toe">
-                </a>
-            </div>
-            </div>
-    
-    </div>
-         
-    
-    </main>
+  <!-- ***** Footer ***** -->
 
-    <footer id="contact-me">
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/lconnell1000/" title="Link to Github Profile">
+            <img src="./assets/images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/lachlan-connell-87280392/'">
+            <img src="./assets/images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-        <ul>
-          <li><a href="#contact me">Contact Me:</a></li>
-            <li><a href="lconnell1000@gmail.com">Send Email</a></li>
-            <li><a href="https://www.linkedin.com/in/lachlan-connell-87280392/" target="_blank">Visit My LinkedIn</a></li>
-            <li><a href="https://github.com/lconnell1000" target="_blank">Visit My Github</a></li>
-            <li><a href="Lachlan.ConnellResume.pdf">Download my Resume</a></li>
-          </ul>
-    
-</footer>
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
